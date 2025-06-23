@@ -12,7 +12,7 @@ Site com informações de uma certificadora digital porfissional e de qualidade
 <br>
 
 <p align="center">
-  <img alt="Cartão de Visita - Life Santos" src=".github/preview.jpeg" width="100%">
+  <img alt="Cartão de Visita - Life Santos" src="./assets/lifesiteee.png" width="100%">
 </p>
 
 ## 🚀 Tecnologias
