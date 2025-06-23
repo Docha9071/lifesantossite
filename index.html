@@ -1,0 +1,495 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Life Santos</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: "#036468",
+            secondary: "#02484b",
+          },
+        },
+      },
+    };
+  </script>
+</head>
+<body class="font-sans bg-gray-50">
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Life Santos - Certificação Digital</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#036468',
+                        secondary: '#02484b',
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(3, 100, 104, 0.8), rgba(3, 100, 104, 0.8)), url('https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+        }
+        
+        .card-hover:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .transition-all {
+            transition: all 0.3s ease;
+        }
+        
+        #mobile-menu {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+        }
+        #mobile-menu.show {
+            max-height: 500px;
+            display: block;
+        }
+    </style>
+</head>
+<body class="font-sans bg-gray-50">
+    <!-- Header/Navigation -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-3 flex justify-between items-center">
+            <div class="flex items-center">
+                <img src="./assets/logoinicio.png" alt="Life Santos Logo" class="h-12">
+            </div>
+            
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex space-x-8">
+                <a href="#home" class="text-primary font-medium hover:text-secondary transition-all">Home</a>
+                <a href="#sobre" class="text-gray-700 font-medium hover:text-primary transition-all">Sobre</a>
+                <a href="#certificados" class="text-gray-700 font-medium hover:text-primary transition-all">Certificados</a>
+                <a href="#parceiros" class="text-gray-700 font-medium hover:text-primary transition-all">Parceiros</a>
+                <a href="#contato" class="text-gray-700 font-medium hover:text-primary transition-all">Contato</a>
+            </nav>
+            
+            <!-- Mobile Menu Button -->
+            <button id="mobile-menu-button" class="md:hidden text-primary focus:outline-none">
+                <i class="fas fa-bars text-2xl"></i>
+            </button>
+        </div>
+        
+        <!-- Mobile Menu -->
+        <nav id="mobile-menu" class="hidden md:hidden bg-white py-3 px-4">
+            <div class="flex flex-col space-y-0">
+                <a href="#home" class="text-primary font-medium hover:text-secondary transition-all py-2">Home</a>
+                <a href="#sobre" class="text-gray-700 font-medium hover:text-primary transition-all py-2">Sobre</a>
+                <a href="#certificados" class="text-gray-700 font-medium hover:text-primary transition-all py-2">Certificados</a>
+                <a href="#parceiros" class="text-gray-700 font-medium hover:text-primary transition-all py-2">Parceiros</a>
+                <a href="#contato" class="text-gray-700 font-medium hover:text-primary transition-all py-2">Contato</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section text-white py-16 md:py-32 px-4">
+        <div class="container mx-auto px-4 text-center">
+            <img src="./assets/logomenuu.png" alt="Life Santos Logo" class="mx-auto mb-8 h-24 md:h-28">
+            <h1 class="text-3xl md:text-5xl font-bold mb-6">Life Santos - Certificação Digital</h1>
+            <p class="text-xl md:text-2xl max-w-3xl mx-auto mb-8">
+                Soluções completas em certificação digital para pessoas físicas (e-CPF) e jurídicas (e-CNPJ), garantindo segurança e validade jurídica aos seus documentos eletrônicos.
+            </p>
+            <a href="#certificados" class="bg-white text-primary font-bold py-3 px-8 rounded-full hover:bg-gray-100 transition-all inline-block">
+                Conheça nossos certificados
+            </a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="sobre" class="py-12 md:py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Sobre Nós</h2>
+            
+            <div class="grid md:grid-cols-3 gap-8 mb-16">
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md transition-all card-hover">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Visão</h3>
+                    <p class="text-gray-700">Ser referência nacional em certificação digital, oferecendo soluções inovadoras que simplificam processos e garantem segurança jurídica para nossos clientes.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md transition-all card-hover">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-bullseye"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Missão</h3>
+                    <p class="text-gray-700">Democratizar o acesso à certificação digital no Brasil, proporcionando segurança, praticidade e economia de tempo e recursos para pessoas e empresas.</p>
+                </div>
+                
+                <div class="bg-gray-50 p-6 rounded-lg shadow-md transition-all card-hover">
+                    <div class="text-primary text-4xl mb-4">
+                        <i class="fas fa-gem"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Valores</h3>
+                    <p class="text-gray-700">Ética, transparência, inovação, excelência no atendimento e compromisso com a satisfação total de nossos clientes.</p>
+                </div>
+            </div>
+            
+            <div class="grid md:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h3 class="text-2xl font-bold text-primary mb-4">O que fazemos</h3>
+                    <p class="text-gray-700 mb-4">
+                        A Life Santos Certificação Digital é especializada na emissão e renovação de certificados digitais, oferecendo soluções completas para pessoas físicas e jurídicas que necessitam de segurança e validade jurídica em seus documentos eletrônicos.
+                    </p>
+                    <p class="text-gray-700 mb-4">
+                        Trabalhamos com os principais modelos de certificados digitais (A1 e A3), disponíveis em token ou cartão, atendendo às necessidades específicas de cada cliente.
+                    </p>
+                    <p class="text-gray-700">
+                        Nossa equipe altamente qualificada está pronta para orientar sobre a melhor solução para seu caso, garantindo conformidade com as normas da ICP-Brasil.
+                    </p>
+                </div>
+                <div>
+                    <img src="./assets/lifemid.jpg" alt="Certificação Digital" class="rounded-lg shadow-lg w-full">
+                </div>
+            </div>
+            
+            <div class="mt-16 bg-primary text-white p-8 rounded-lg">
+                <h3 class="text-2xl font-bold mb-4">Por que ter um certificado digital?</h3>
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Benefícios:</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Assinatura digital com validade jurídica</li>
+                            <li>Autenticação segura em sistemas governamentais</li>
+                            <li>Agilidade em processos burocráticos</li>
+                            <li>Redução de custos com deslocamentos</li>
+                            <li>Eliminação da necessidade de reconhecimento de firma</li>
+                            <li>Segurança e proteção contra fraudes</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h4 class="text-xl font-semibold mb-2">Obrigatoriedades:</h4>
+                        <ul class="list-disc pl-5 space-y-2">
+                            <li>Empresas optantes pelo Simples Nacional</li>
+                            <li>Profissionais que emitem NF-e, NFC-e, CT-e</li>
+                            <li>Declaração de Imposto de Renda de PJ</li>
+                            <li>Acesso ao eSocial</li>
+                            <li>Procurações eletrônicas</li>
+                            <li>Assinatura de contratos digitais</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificados" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Modelos de Certificados</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8 mb-12">
+                <div class="bg-white p-8 rounded-lg shadow-md transition-all card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-id-card text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-primary">Certificado A1</h3>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">PF</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">PJ</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        O certificado digital A1 é instalado diretamente no computador ou dispositivo móvel, sem necessidade de mídia física. Possui validade de 1 ano.
+                    </p>
+                    <ul class="list-disc pl-5 mb-6 text-gray-700 space-y-2">
+                        <li>Armazenado no sistema operacional</li>
+                        <li>Pode ser exportado e instalado em outros dispositivos</li>
+                        <li>Ideal para uso em múltiplos computadores</li>
+                        <li>Mais econômico</li>
+                    </ul>
+                    <div class="bg-primary bg-opacity-10 p-4 rounded-lg">
+                        <p class="font-bold text-primary text-xl text-center">A partir de R$ 128,95</p>
+                    </div>
+                </div>
+                
+                <div class="bg-white p-8 rounded-lg shadow-md transition-all card-hover">
+                    <div class="flex items-center justify-between mb-4">
+                        <div class="flex items-center">
+                            <div class="bg-primary text-white p-3 rounded-full mr-4">
+                                <i class="fas fa-usb-drive text-2xl"></i>
+                            </div>
+                            <h3 class="text-2xl font-bold text-primary">Certificado A3</h3>
+                        </div>
+                        <div class="flex space-x-2">
+                            <span class="bg-blue-100 text-blue-800 text-xs font-medium px-2.5 py-0.5 rounded">PF</span>
+                            <span class="bg-green-100 text-green-800 text-xs font-medium px-2.5 py-0.5 rounded">PJ</span>
+                        </div>
+                    </div>
+                    <p class="text-gray-700 mb-4">
+                        O certificado digital A3 é armazenado em uma mídia física (token ou cartão) com chip criptográfico. Possui validade de 1 a 3 anos.
+                    </p>
+                    <ul class="list-disc pl-5 mb-6 text-gray-700 space-y-2">
+                        <li>Maior segurança por estar em hardware dedicado</li>
+                        <li>Necessita de leitora para cartão (se for o modelo em cartão)</li>
+                        <li>Ideal para quem precisa de maior portabilidade</li>
+                        <li>Obrigatório para algumas aplicações específicas</li>
+                    </ul>
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-lg">
+                            <p class="font-semibold text-primary text-center">Token</p>
+                            <p class="font-bold text-primary text-center">A partir de R$ 238,95</p>
+                        </div>
+                        <div class="bg-primary bg-opacity-10 p-3 rounded-lg">
+                            <p class="font-semibold text-primary text-center">Cartão</p>
+                            <p class="font-bold text-primary text-center">A partir de R$ 148,95</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="bg-white p-4 md:p-8 rounded-lg shadow-md max-w-4xl mx-auto overflow-x-auto">
+                <h3 class="text-2xl font-bold text-primary mb-4 text-center">Qual certificado escolher?</h3>
+                <div class="overflow-x-auto">
+                    <table class="min-w-full bg-white">
+                        <thead class="bg-primary text-white">
+                            <tr>
+                                <th class="py-3 px-4 text-left">Critério</th>
+                                <th class="py-3 px-4 text-center">A1</th>
+                                <th class="py-3 px-4 text-center">A3 (Token)</th>
+                                <th class="py-3 px-4 text-center">A3 (Cartão)</th>
+                            </tr>
+                        </thead>
+                        <tbody class="text-gray-700">
+                            <tr class="border-b">
+                                <td class="py-3 px-4">Validade</td>
+                                <td class="py-3 px-4 text-center">1 ano</td>
+                                <td class="py-3 px-4 text-center">1-3 anos</td>
+                                <td class="py-3 px-4 text-center">1-3 anos</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-4">Armazenamento</td>
+                                <td class="py-3 px-4 text-center">Computador/Dispositivo</td>
+                                <td class="py-3 px-4 text-center">Token USB</td>
+                                <td class="py-3 px-4 text-center">Cartão com Chip</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-4">Portabilidade</td>
+                                <td class="py-3 px-4 text-center">Média (exportável)</td>
+                                <td class="py-3 px-4 text-center">Alta</td>
+                                <td class="py-3 px-4 text-center">Alta (com leitora)</td>
+                            </tr>
+                            <tr class="border-b">
+                                <td class="py-3 px-4">Segurança</td>
+                                <td class="py-3 px-4 text-center">Boa</td>
+                                <td class="py-3 px-4 text-center">Excelente</td>
+                                <td class="py-3 px-4 text-center">Excelente</td>
+                            </tr>
+                            <tr>
+                                <td class="py-3 px-4">Melhor para</td>
+                                <td class="py-3 px-4 text-center">Uso em vários dispositivos</td>
+                                <td class="py-3 px-4 text-center">Quem precisa levar consigo</td>
+                                <td class="py-3 px-4 text-center">Segurança máxima</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section id="parceiros" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-primary mb-12">Nossos Parceiros</h2>
+            
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/1.jpg" alt="SERTA" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/2.jpg" alt="OCB" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/3.jpg" alt="GVSERV" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/4.jpg" alt="INTEGRA" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/5.jpg" alt="INTERBENS" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/6.jpg" alt="LIFE SEGUROS" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/7.jpg" alt="RPM REPAROS" class="h-24 md:h-32 object-contain">
+                </div>
+                <div class="flex items-center justify-center p-4 border border-gray-200 rounded-lg hover:shadow-md transition-all">
+                    <img src="./assets/8.jpg" alt="FAM CARGO" class="h-24 md:h-32 object-contain">
+                </div>
+                </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contato" class="py-16 bg-primary text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Entre em Contato</h2>
+            
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Nossa Localização</h3>
+                    <div class="mb-6">
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-semibold">Santos</p>
+                                <p>R.Primeiro de Maio, 77 - Aparecida, Santos - SP, 11035-181</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <div>
+                                <p class="font-semibold">São Vicente</p>
+                                <p>R. Frei Gaspar, 704 - Centro, São Vicente - SP, 11310-061</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <p>(13) 99805-6545</p>
+                        </div>
+                        <div class="flex items-start mb-4">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <p>lifesantoscertificadora@gmail.com</p>
+                        </div>
+                        <div class="flex items-start">
+                            <i class="fas fa-clock mt-1 mr-3"></i>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-white bg-opacity-20 p-4 rounded-lg">
+                        <h4 class="font-bold mb-2">Atendimento Online</h4>
+                        <p class="mb-3">Também oferecemos atendimento remoto via WhatsApp para maior comodidade:</p>
+                        <a href="https://wa.me/5513998056545" target="_blank" class="bg-green-500 hover:bg-green-600 text-white font-bold py-2 px-4 rounded-full inline-flex items-center transition-all">
+                            <i class="fab fa-whatsapp mr-2"></i> WhatsApp
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">Envie uma Mensagem</h3>
+                    <form class="space-y-4">
+                        <div>
+                            <label for="name" class="block mb-1">Nome</label>
+                            <input type="text" id="name" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="email" class="block mb-1">E-mail</label>
+                            <input type="email" id="email" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="phone" class="block mb-1">Telefone</label>
+                            <input type="tel" id="phone" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-white">
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-1">Mensagem</label>
+                            <textarea id="message" rows="4" class="w-full px-4 py-2 rounded text-gray-800 focus:outline-none focus:ring-2 focus:ring-white"></textarea>
+                        </div>
+                        <button type="submit" class="bg-white text-primary font-bold py-3 px-6 rounded-full hover:bg-gray-100 transition-all">
+                            Enviar Mensagem
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white py-6 sm:py-8">
+  <div class="container mx-auto px-4">
+    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 mb-8 justify-items-center text-center">
+      
+      <!-- Logo + descrição -->
+      <div>
+        <img src="./assets/lifesite.png" alt="Life Santos Logo"
+             class="h-16 sm:h-20 md:h-24 mb-3 object-contain mx-auto">
+        <p class="text-xs sm:text-sm">Soluções completas em certificação digital para pessoas físicas e jurídicas.</p>
+      </div>
+
+      <!-- Links Rápidos em acordeão no mobile -->
+      <details class="w-full">
+        <summary class="font-bold mb-2 cursor-pointer select-none">Links Rápidos</summary>
+        <ul class="space-y-2 mt-2">
+          <li><a href="#home" class="block py-1 hover:text-gray-300 transition-all">Home</a></li>
+          <li><a href="#sobre" class="block py-1 hover:text-gray-300 transition-all">Sobre Nós</a></li>
+          <li><a href="#certificados" class="block py-1 hover:text-gray-300 transition-all">Certificados</a></li>
+          <li><a href="#parceiros" class="block py-1 hover:text-gray-300 transition-all">Parceiros</a></li>
+          <li><a href="#contato" class="block py-1 hover:text-gray-300 transition-all">Contato</a></li>
+        </ul>
+      </details>
+
+      <!-- Certificados em acordeão no mobile -->
+      <details class="w-full">
+        <summary class="font-bold mb-2 cursor-pointer select-none">Certificados</summary>
+        <ul class="space-y-2 mt-2">
+          <li><a href="https://wa.me/5513998056545" target="_blank" class="block py-1 hover:text-gray-300 transition-all">A1</a></li>
+          <li><a href="https://wa.me/5513998056545" target="_blank" class="block py-1 hover:text-gray-300 transition-all">A3 Token</a></li>
+          <li><a href="https://wa.me/5513998056545" target="_blank" class="block py-1 hover:text-gray-300 transition-all">A3 Cartão</a></li>
+          <li><a href="https://wa.me/5513998056545" target="_blank" class="block py-1 hover:text-gray-300 transition-all">Renovação</a></li>
+          <li><a href="https://wa.me/5513998056545" target="_blank" class="block py-1 hover:text-gray-300 transition-all">Dúvidas</a></li>
+        </ul>
+      </details>
+
+      <!-- Redes Sociais -->
+      <div>
+        <h4 class="font-bold mb-2">Redes Sociais</h4>
+        <div class="flex space-x-4 justify-center mt-2">
+          <a href="https://www.facebook.com/share/1HwoLmW51C/" target="_blank"
+             class="text-2xl sm:text-3xl hover:text-gray-300 transition-all p-2"><i class="fab fa-facebook"></i></a>
+          <a href="https://www.instagram.com/lifesantos_ar" target="_blank"
+             class="text-2xl sm:text-3xl hover:text-gray-300 transition-all p-2"><i class="fab fa-instagram"></i></a>
+          <a href="https://www.linkedin.com/in/lifesantos" target="_blank"
+             class="text-2xl sm:text-3xl hover:text-gray-300 transition-all p-2"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+      
+    </div>
+    
+    <div class="border-t border-gray-700 pt-4 text-center text-xs sm:text-sm">
+      <p>&copy; 2025 Life Santos Certificação Digital. Todos os direitos reservados.</p>
+      <p class="mt-1">Certificadora Autorizada pela ICP-Brasil</p>
+    </div>
+  </div>
+</footer>
+
+
+    <!-- WhatsApp Float Button -->
+    <a href="https://wa.me/5513998056545" target="_blank" class="fixed bottom-6 right-6 bg-green-500 text-white p-3 rounded-full shadow-lg hover:bg-green-600 transition-all z-50">
+        <i class="fab fa-whatsapp text-2xl"></i>
+    </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
